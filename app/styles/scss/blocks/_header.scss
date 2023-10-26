@@ -1,0 +1,46 @@
+.header {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+    }
+    &__btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+.menu {
+    padding-left: 35px;
+    padding-right: 60px;
+        &__list {
+            display: flex;
+            gap: 81px;
+        }
+        &__list-link {
+            @extend %title-font;
+            color: rgba(54, 56, 56, 0.9033);
+            line-height: 22px;
+            border: none;
+            background-color: transparent;
+        }
+        &__list-link--active {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                height: 2px;
+                background-color: rgba($color: $black, $alpha: .7);
+                border-radius: 1px;
+            }
+        }
+}
+.logo {
+    margin: 0 auto;
+}

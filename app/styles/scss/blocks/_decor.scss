@@ -1,0 +1,45 @@
+.decor {
+    display: flex;
+    padding: 170px 0 155px;
+    align-items: center;
+    z-index: -1;
+	background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    background-image: url(../../../images/decor-bg.avif);
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba($color: #fff, $alpha: .7);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &__title {
+        @extend %title-font;
+        font-size: 60px;
+        line-height: 80px;
+        max-width: 730px;
+        color: $black;
+        position: relative;
+        padding-bottom: 21px;
+        margin-bottom: 22px;
+        &::after {
+            content: '';
+            position: absolute;
+            max-width: 200px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            background-color: #6D7278;
+        }
+    }
+    &__text {
+        color: $default;
+        max-width: 540px;
+    }
+}

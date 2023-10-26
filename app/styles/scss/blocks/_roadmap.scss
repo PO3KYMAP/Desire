@@ -1,0 +1,71 @@
+.roadmap {
+    padding: 80px 0 30px;
+    &__title {
+        text-align: center;
+        color: $black;
+        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 51px;
+        @extend %title-font;
+    }
+    &__item {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        &--production {
+            margin-left: 320px;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left:0;
+                height: 20px;
+                width: 2px;
+                background-color: rgba($color: $black, $alpha: .7)
+            }
+        }
+        &--consultation,
+        &--production {
+            padding-bottom: 38px;
+        }
+        &--measuring {
+            padding-top: 38px;
+            margin-left: 305px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 2px;
+                background-color: rgba($color: $black, $alpha: .7);
+            }
+        }
+    }
+    &__items-box {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 2px solid rgba($color: $black, $alpha: .7);
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $black;
+        }
+    }
+    &__item-title {
+        color: $black;
+        margin-left: 13px;
+        @extend %title-font;
+    }
+    &__item-text {
+        margin-top: 13px;
+    }
+}

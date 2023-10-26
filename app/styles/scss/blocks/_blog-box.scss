@@ -1,0 +1,36 @@
+.blog-box {
+    padding-bottom: 65px;
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        max-width: 430px;
+        color: $black;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    &__img {
+        margin-bottom: 20px;
+    }
+    &__info-text {
+        font-size: 14px;
+        font-weight: 600;
+        
+    }
+    &__info-link {
+    color: #707070;
+    }
+    &__info-title {
+        @extend %title-font;
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 55px;
+        color: $black;
+    }
+}

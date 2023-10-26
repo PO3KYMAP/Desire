@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/css/main.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/big-logo.avif">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <button class="menu__list-link about" onclick="window.location.href='../about.html'" type="submit">About</button>
+                            </li>
+                            <li class="menu__list-item">
+                                <button class="menu__list-link nav-gallery" onclick="window.location.href='../gallery.html'">Gallery</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="logo" href="../index.html">
+                        <img src="images/logo.svg" alt="logo" />
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <button class="menu__list-link header-blog" onclick="window.location.href='../blog.html'">Blog</button>
+                            </li>
+                            <li class="menu__list-item">
+                                <button class="menu__list-link contact" onclick="window.location.href='../contact.html'">Contact</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__btn">
+                        <img src="images/icon_menu.svg" alt="" />
+                    </button>
+                    <div class="rightside-menu">
+                        <button class="rightside-menu__close">
+                            &#10005;
+                        </button>
+                        <div class="rightside-menu__content">
+                            <img class="rightside-menu__logo" src="../images/big-logo.avif" alt="">
+                            <h4 class="rightside-menu__title">Furniture for life</h4>
+                            <p class="rightside-menu__text">Sustainable hot chicken skateboard, dreamcatcher meggings
+                                actually squid.
+                                Slow-carb everyday carry +1 art party
+                                microdosing, put a bird on it brooklyn</p>
+                            <img class="rightside-menu__img" src="../images/Rectangle.avif" alt="LOSHPED">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<main class="main">
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__inner">
+                <div class="blog__items"></div>
+                <aside class="aside">
+                    <form class="aside__form">
+                        <input class="aside__form-input" type="search" placeholder="Search" />
+                        <button class="aside__form-btn" type="submit">
+                            <img class="form__search-icon" src="../images/search-icon.svg" alt="">
+                        </button>
+                    </form>
+                    <div class="blog__category">
+                        <h6 class="aside__title">Categories</h6>
+                        <ul class="blog__category-list">
+                            <li class="blog__category-item">
+                                <a class="blog__category-link" href="#">Dining room (1)</a>
+                            </li>
+                            <li class="blog__category-item">
+                                <a class="blog__category-link" href="#">Office furniture (12)</a>
+                            </li>
+                            <li class="blog__category-item">
+                                <a class="blog__category-link" href="#">Simple interiror design (2)</a>
+                            </li>
+                            <li class="blog__category-item">
+                                <a class="blog__category-link" href="#">Design (4)</a>
+                            </li>
+                            <li class="blog__category-item">
+                                <a class="blog__category-link" href="#">Bedroom Furniture (1)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog__posts">
+                        <h6 class="aside__title">Recent Posts</h6>
+                        <ul class="blog__posts-list">
+                            <li class="blog__posts-item">
+                                <a class="blog__posts-title" href="#">Cred selfies edison bulb four dollar toast
+                                    humblebrag</a>
+                                <span class="blog__posts-date">August 10, 2020</span> |
+                                <a class="blog__posts-author" href="#">by Ann Summers</a>
+                            </li>
+                            <li class="blog__posts-item">
+                                <a class="blog__posts-title" href="#">Semiotics fixie four dollar toast, next level woke
+                                    scenester
+                                    direct trade photo booth</a>
+                                <span class="blog__posts-date">September 30 ,2020</span> |
+                                <a class="blog__posts-author" href="#">by Ann Summers</a>
+                            </li>
+                            <li class="blog__posts-item">
+                                <a class="blog__posts-title" href="#">Cred selfies edison bulb four dollar toast
+                                    humblebrag</a>
+                                <span class="blog__posts-date">May 2, 2020</span> |
+                                <a class="blog__posts-author" href="#">by Ann Summers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog__tags">
+                        <h6 class="aside__title">Tags</h6>
+                        <a class="blog__tags-link" href="#">
+                            Dining room futniture
+                        </a>
+                        <a class="blog__tags-link" href="#">
+                            Chair
+                        </a>
+                        <a class="blog__tags-link" href="#">
+                            Table
+                        </a>
+                        <a class="blog__tags-link" href="#">
+                            Bedroom
+                        </a>
+                        <a class="blog__tags-link" href="#">
+                            Office Furniture
+                        </a>
+                    </div>
+                    <ul class="blog__social">
+                        <li class="blog__social-item">
+                            <a class="blog__social-link" href="#">
+                                <img class="blog__social-img" src="../images/facebook.svg" alt="tubik">
+                            </a>
+                        </li>
+                        <li class="blog__social-item">
+                            <a class="blog__social-link" href="#">
+                                <img class="blog__social-img" src="../images/instagram.svg" alt="tubik">
+                            </a>
+                        </li>
+                        <li class="blog__social-item">
+                            <a class="blog__social-link" href="#">
+                                <img class="blog__social-img" src="../images/Pinterest.svg" alt="tubik">
+                            </a>
+                        </li>
+                        <li class="blog__social-item">
+                            <a class="blog__social-link" href="#">
+                                <img class="blog__social-img" src="../images/whatsapp.svg" alt="tubik">
+                            </a>
+                        </li>
+                        <li class="blog__social-item">
+                            <a class="blog__social-link" href="#">
+                                <img class="blog__social-img" src="../images/youtube.svg" alt="tubik">
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <h5 class="footer__menu-title">Contact Us</h5>
+                    <p class="footer__info-text">
+                        Keffiyeh poutine etsy, paleo cray put a bird on it microdosing
+                        schlitz you probably occupy
+                    </p>
+                    <a class="info-email" href="mailto:ouremailaddress@email.com">ouremailaddress@email.com</a>
+                    <form class="footer__form" action="#">
+                        <input class="footer__form-input" type="email" placeholder="Subscribe by email">
+                        <button class="footer__form-btn" type="submit">Send</button>
+                    </form>
+                </div>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#"> <img class="footer__social-icon"
+                                src="../images/facebook.svg" alt="icon"> Facebook</a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#"> <img class="footer__social-icon"
+                                src="../images/instagram.svg" alt="icon"> Instagram</a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#"> <img class="footer__social-icon"
+                                src="../images/Pinterest.svg" alt="icon"> Pinterest</a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#"> <img class="footer__social-icon"
+                                src="../images/whatsapp.svg" alt="icon"> Whatsapp</a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#"> <img class="footer__social-icon"
+                                src="../images/youtube.svg" alt="icon"> Youtube</a>
+                    </li>
+                </ul>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Delivery</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">FAQ</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Help</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">More About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        674 Gonzales Drive. Washington, PA 15301
+    </div>
+</footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
